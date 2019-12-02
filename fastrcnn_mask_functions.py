@@ -1,5 +1,6 @@
 import os
 import shutil
+import numpy as np
 import torch
 import torchvision
 from PIL import Image
@@ -68,23 +69,24 @@ def apply_mask(masks, image, names_to_save, device,
         save2drive(dir_path=drive_path, images_names=names_to_save)
 
 
-# def apply_patch(masks, image, names_to_save, device,
-#                 to_save_in_drive=True, drive_path=None):
-#     assert isinstance(masks, torch.Tensor)
-#     assert len(masks.shape) == 4
-#     assert isinstance(image, torch.Tensor)
-#     assert masks.shape[0] == len(names_to_save)
-#     assert masks.shape[2] == image.shape[1] and masks.shape[3] == image.shape[2]
-#     assert (to_save_in_drive == True and drive_path != None) or (to_save_in_drive == False and drive_path == None)
-#
-#     for i, name in enumerate(names_to_save):
-#         masked = torch.mul(image.to(device), masks[i, :, :, :])
-#
-#         masked = Image.fromarray(masked.mul(255).permute(1, 2, 0).byte().cpu().numpy())
-#
-#
-#         masked = masked.save(name)
+def apply_patch(mask, image, name_to_save, device,
+                offset_h, offset_v,
+                to_save_in_drive=True, drive_path=None):
+    assert isinstance(mask, torch.Tensor)
+    assert len(mask.shape) == 4
+    assert isinstance(image, torch.Tensor)
+    assert mask.shape[2] == image.shape[1] and mask.shape[3] == image.shape[2]
+    assert (to_save_in_drive == True and drive_path != None) or (to_save_in_drive == False and drive_path == None)
 
+    masked = torch.mul(image.to(device), mask)
+    masked_pil = Image.fromarray(masked.mul(255).permute(1, 2, 0).byte().cpu().numpy())
+    _, argz_v, argz_h = np.where(mask.cpu().numpy() == 0)
+    masked[:, argz_v, argz_h] = masked[:, argz_v + offset_v, argz_h + offset_h]
+    new_masked_pil = Image.fromarray(masked.mul(255).permute(1, 2, 0).byte().cpu().numpy())
+
+    print('Save {} here... '.format(name), end=' ')
+    masked = new_masked_pil.save(name_to_save)
+    print('Done.')
 
 
 
