@@ -82,12 +82,16 @@ def apply_patch(mask, image, name_to_save, device,
     masked = torch.mul(image.to(device), mask)
     masked_pil = Image.fromarray(masked.mul(255).permute(1, 2, 0).byte().cpu().numpy())
     _, argz_v, argz_h = np.where(mask.cpu().numpy() == 0)
+    # TODO: add support for list of offsets. (manorz, 12/02/19)
     masked[:, argz_v, argz_h] = masked[:, argz_v + offset_v, argz_h + offset_h]
     new_masked_pil = Image.fromarray(masked.mul(255).permute(1, 2, 0).byte().cpu().numpy())
 
     print('Save {} here... '.format(name_to_save), end=' ')
     masked = new_masked_pil.save(name_to_save)
     print('Done.')
+
+    if to_save_in_drive:
+        save2drive(dir_path=drive_path, images_names=name_to_save)
 
 
 
