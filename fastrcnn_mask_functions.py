@@ -73,6 +73,7 @@ def apply_patch(mask, image, name_to_save, device,
                 offset_h, offset_v,
                 to_save_in_drive=True, drive_path=None):
     assert isinstance(mask, torch.Tensor)
+    print(len(mask.shape))
     assert len(mask.shape) == 3
     assert isinstance(image, torch.Tensor)
     assert mask.shape[2] == image.shape[1] and mask.shape[3] == image.shape[2]
