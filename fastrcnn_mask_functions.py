@@ -84,7 +84,7 @@ def apply_patch(mask, image, name_to_save, device,
     masked[:, argz_v, argz_h] = masked[:, argz_v + offset_v, argz_h + offset_h]
     new_masked_pil = Image.fromarray(masked.mul(255).permute(1, 2, 0).byte().cpu().numpy())
 
-    print('Save {} here... '.format(name), end=' ')
+    print('Save {} here... '.format(name_to_save), end=' ')
     masked = new_masked_pil.save(name_to_save)
     print('Done.')
 
