@@ -23,7 +23,7 @@ def get_instance_segmentation_model(num_classes):
     return model
 
 
-def crete_names(image_name, name, amount):
+def create_names(image_name, name, amount):
     masks_names = [image_name[:-4] + '_{}_{}.jpg'.format(name, i) for i in range(amount)]
     return masks_names
 
@@ -60,10 +60,13 @@ def apply_mask(masks, image, names_to_save, device,
     for i, name in enumerate(names_to_save):
         masked = torch.mul(image.to(device), masks[i, :, :, :])
         masked = Image.fromarray(masked.mul(255).permute(1, 2, 0).byte().cpu().numpy())
+        print('Save {} here... '.format(name), end=' ')
         masked = masked.save(name)
+        print('Done.')
 
     if to_save_in_drive:
         save2drive(dir_path=drive_path, images_names=names_to_save)
+
 
 # def apply_patch(masks, image, names_to_save, device,
 #                 to_save_in_drive=True, drive_path=None):
