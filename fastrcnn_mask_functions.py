@@ -90,10 +90,9 @@ def apply_patch(mask, image, name_to_save, device,
     masked = new_masked_pil.save(name_to_save)
     print('Done.')
 
-    print(drive_path, name_to_save)
-
-    if to_save_in_drive:
-        save2drive(dir_path=drive_path, images_names=name_to_save)
+    # TODO: check why the assertion in save2drive is raised. (manorz, 12/04/19)
+    # if to_save_in_drive:
+    #     save2drive(dir_path=drive_path, images_names=name_to_save)
 
 
 
