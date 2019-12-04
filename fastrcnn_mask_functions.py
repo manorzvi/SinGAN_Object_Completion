@@ -42,6 +42,7 @@ def save_here(images, images_names):
 def save2drive(dir_path, images_names):
     assert os.path.exists(dir_path)
     for name in images_names:
+        print(name)
         assert os.path.exists(name)
         name_dest = os.path.join(dir_path, name)
         print('Save {} to drive... '.format(name), end=' ')
