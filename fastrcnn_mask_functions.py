@@ -42,7 +42,6 @@ def save_here(images, images_names):
 def save2drive(dir_path, images_names):
     assert os.path.exists(dir_path)
     for name in images_names:
-        print(name)
         assert os.path.exists(name)
         name_dest = os.path.join(dir_path, name)
         print('Save {} to drive... '.format(name), end=' ')
@@ -90,6 +89,8 @@ def apply_patch(mask, image, name_to_save, device,
     print('Save {} here... '.format(name_to_save), end=' ')
     masked = new_masked_pil.save(name_to_save)
     print('Done.')
+
+    print(drive_path, name_to_save)
 
     if to_save_in_drive:
         save2drive(dir_path=drive_path, images_names=name_to_save)
