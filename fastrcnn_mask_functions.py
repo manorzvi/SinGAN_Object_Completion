@@ -73,11 +73,11 @@ def apply_patch(mask, image, name_to_save, device,
                 offset_h, offset_v,
                 to_save_in_drive=True, drive_path=None):
     # TODO: add assertions later! (manorz, 12/02/19)
-    # assert isinstance(mask, torch.Tensor)
-    # assert len(mask.shape) == 3
-    # assert isinstance(image, torch.Tensor)
-    # assert mask.shape[2] == image.shape[1] and mask.shape[3] == image.shape[2]
-    # assert (to_save_in_drive == True and drive_path != None) or (to_save_in_drive == False and drive_path == None)
+    assert isinstance(mask, torch.Tensor)
+    assert len(mask.shape) == 3
+    assert isinstance(image, torch.Tensor)
+    assert mask.shape[1] == image.shape[1] and mask.shape[2] == image.shape[2]
+    assert (to_save_in_drive == True and drive_path != None) or (to_save_in_drive == False and drive_path == None)
 
     masked = torch.mul(image.to(device), mask)
     masked_pil = Image.fromarray(masked.mul(255).permute(1, 2, 0).byte().cpu().numpy())
@@ -91,8 +91,8 @@ def apply_patch(mask, image, name_to_save, device,
     print('Done.')
 
     # TODO: check why the assertion in save2drive is raised. (manorz, 12/04/19)
-    # if to_save_in_drive:
-    #     save2drive(dir_path=drive_path, images_names=name_to_save)
+    if to_save_in_drive:
+        save2drive(dir_path=drive_path, images_names=name_to_save)
 
 
 
