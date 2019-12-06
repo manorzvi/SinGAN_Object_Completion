@@ -12,10 +12,12 @@ if __name__ == '__main__':
     parser.add_argument('--delete_previous', action='store_true',     help='delete previous run results directory, if exists.', default=False)
     opt = parser.parse_args()
     opt = functions.post_config(opt)
-    Gs = []
-    Zs = []
-    reals = []
+
+    Gs       = []
+    Zs       = []
+    reals    = []
     NoiseAmp = []
+
     dir2save = functions.generate_dir2save(opt)
 
     if (os.path.exists(dir2save)):

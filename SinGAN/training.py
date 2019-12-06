@@ -17,7 +17,7 @@ def train(opt,Gs,Zs,reals,NoiseAmp):
     nfc_prev = 0
 
     while scale_num<opt.stop_scale+1:
-        opt.nfc = min(opt.nfc_init * pow(2, math.floor(scale_num / 4)), 128)
+        opt.nfc     = min(opt.nfc_init * pow(2, math.floor(scale_num / 4)), 128)
         opt.min_nfc = min(opt.min_nfc_init * pow(2, math.floor(scale_num / 4)), 128)
 
         opt.out_ = functions.generate_dir2save(opt)
@@ -86,11 +86,11 @@ def train_single_scale(netD,netG,reals,Gs,Zs,in_s,NoiseAmp,opt,centers=None):
     schedulerD = torch.optim.lr_scheduler.MultiStepLR(optimizer=optimizerD,milestones=[1600],gamma=opt.gamma)
     schedulerG = torch.optim.lr_scheduler.MultiStepLR(optimizer=optimizerG,milestones=[1600],gamma=opt.gamma)
 
-    errD2plot = []
-    errG2plot = []
+    errD2plot   = []
+    errG2plot   = []
     D_real2plot = []
     D_fake2plot = []
-    z_opt2plot = []
+    z_opt2plot  = []
 
     for epoch in range(opt.niter):
         if (Gs == []) & (opt.mode != 'SR_train'):
