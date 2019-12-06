@@ -2,62 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c25cef43-d1d1-45be-8fd7-7171691c5cda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/noise_pyramids.pth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/0.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/19.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/29.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/39.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/49.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/6.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/7.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/8.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/noise_pyramids.pth" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese1/gen_start_scale=0/noise_pyramids.pth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SinGAN/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/SinGAN/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SinGAN/manipulate.py" beforeDir="false" afterPath="$PROJECT_DIR$/SinGAN/manipulate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrainedModels/panda/scale_factor=0.750000,alpha=10/0/real_scale.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_samples.py" beforeDir="false" afterPath="$PROJECT_DIR$/random_samples.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +88,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/random_samples.py" />
-      <option name="PARAMETERS" value="--input_name chinese1.jpg --input_dir Input/People --mode random_samples --gen_start_scale 0 --delete_previous --not_cuda --num_samples 10 --save_noise_pyramid" />
+      <option name="PARAMETERS" value="--input_name balloons.png --input_dir Input/Images --mode random_samples --gen_start_scale 0 --delete_previous --not_cuda --num_samples 10 --save_noise_pyramid" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -184,7 +141,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/SinGAN/functions.py</url>
-          <line>225</line>
+          <line>228</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -196,6 +153,11 @@
           <url>file://$PROJECT_DIR$/SinGAN/manipulate.py</url>
           <line>160</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/SinGAN/functions.py</url>
+          <line>196</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
