@@ -19,6 +19,7 @@ import imageio
 import matplotlib.pyplot as plt
 from SinGAN.training import *
 from config import get_arguments
+from pprint import pprint
 
 def generate_gif(Gs,Zs,reals,NoiseAmp,opt,alpha=0.1,beta=0.9,start_scale=2,fps=10):
 
@@ -86,7 +87,12 @@ def generate_gif(Gs,Zs,reals,NoiseAmp,opt,alpha=0.1,beta=0.9,start_scale=2,fps=1
     imageio.mimsave('%s/start_scale=%d/alpha=%f_beta=%f.gif' % (dir2save,start_scale,alpha,beta),images_cur,fps=fps)
     del images_cur
 
-def SinGAN_generate(Gs,Zs,reals,NoiseAmp,opt,in_s=None,scale_v=1,scale_h=1,n=0,gen_start_scale=0,num_samples=50):
+def SinGAN_generate(Gs,Zs,reals,NoiseAmp,opt,in_s=None,scale_v=1,scale_h=1,n=0,gen_start_scale=0,num_samples=50, Ns=None):
+    assert opt.save_noise_pyramid and Ns is not None, "if save_noise_pyramid option is active," \
+                                                      "you must provide Ns - a nested dictionary to save" \
+                                                      "the intermediate noises."
+    assert isinstance(Ns, dict)
+
     #if torch.is_tensor(in_s) == False:
     if in_s is None:
         in_s = torch.full(reals[0].shape, 0, device=opt.device)
@@ -131,6 +137,10 @@ def SinGAN_generate(Gs,Zs,reals,NoiseAmp,opt,in_s=None,scale_v=1,scale_h=1,n=0,g
             z_in = noise_amp*(z_curr)+I_prev
             I_curr = G(z_in.detach(),I_prev)
 
+            # TODO: for each sample (i), and for each scale (n), save input noise map at Ns: Ns[sample idx][scale idx]
+            if opt.save_noise_pyramid:
+                Ns[i].append(z_curr)
+
             if n == len(reals)-1:
                 if opt.mode == 'train':
                     dir2save = '%s/RandomSamples/%s/gen_start_scale=%d' % (opt.out, opt.input_name[:-4], gen_start_scale)
@@ -146,5 +156,12 @@ def SinGAN_generate(Gs,Zs,reals,NoiseAmp,opt,in_s=None,scale_v=1,scale_h=1,n=0,g
                     #plt.imsave('%s/in_s.png' % (dir2save), functions.convert_image_np(in_s), vmin=0,vmax=1)
             images_cur.append(I_curr)
         n+=1
+
+    if opt.save_noise_pyramid:
+        dir2save = functions.generate_dir2save(opt)
+        file2save = os.path.join(dir2save,'noise_pyramids.pth')
+        torch.save(Ns, file2save)
+
+
     return I_curr.detach()
 
