@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c25cef43-d1d1-45be-8fd7-7171691c5cda" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=8/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=8/noise_pyramids.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_train_for_sbatch.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/object_completion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=8/0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=8/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=8/noise_pyramids.pth" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=8/noise_pyramids.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SinGAN/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/SinGAN/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_samples.py" beforeDir="false" afterPath="$PROJECT_DIR$/random_samples.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +41,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.random_samples">
-    <configuration name="main_train (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.object_completion">
+    <configuration name="main_train" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SinGAN" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -56,6 +63,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="object_completion" type="PythonConfigurationType" factoryName="Python">
+      <module name="SinGAN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/object_completion.py" />
+      <option name="PARAMETERS" value="--input_name nature7.jpg --input_dir Input/People --mode object_completion --gen_start_scale 0 --not_cuda --num_samples 1 --save_noise_pyramid --delete_previous" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="random_samples" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SinGAN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,7 +97,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/random_samples.py" />
-      <option name="PARAMETERS" value="--input_name nature7.jpg --input_dir Input/People --mode random_samples --gen_start_scale 5 --not_cuda --num_samples 1 --save_noise_pyramid" />
+      <option name="PARAMETERS" value="--input_name nature7.jpg --input_dir Input/People --mode random_samples --gen_start_scale 8 --not_cuda --num_samples 1 --save_noise_pyramid" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -78,13 +106,14 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.main_train (1)" />
+      <item itemvalue="Python.object_completion" />
+      <item itemvalue="Python.main_train" />
       <item itemvalue="Python.random_samples" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.random_samples" />
-        <item itemvalue="Python.main_train (1)" />
+        <item itemvalue="Python.main_train" />
       </list>
     </recent_temporary>
   </component>
@@ -134,43 +163,63 @@
       <screen x="0" y="27" width="3840" height="1053" />
     </state>
     <state x="555" y="200" width="800" height="677" key="#Inspections/0.27.3840.1053@0.27.3840.1053" timestamp="1576249593939" />
-    <state x="209" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576339751304">
+    <state x="209" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576348540423">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="418" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.3840.1053@0.27.3840.1053" timestamp="1576252359847" />
-    <state x="209" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576339751304" />
-    <state width="1897" height="254" key="GridCell.Tab.0.bottom" timestamp="1576333391579">
-      <screen x="0" y="27" width="3840" height="1053" />
+    <state x="209" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576348540423" />
+    <state x="634" y="219" width="642" height="639" key="#object_completion" timestamp="1576346492028">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="634" y="219" width="642" height="639" key="#object_completion/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576346492028" />
+    <state x="634" y="219" width="642" height="639" key="#random_samples" timestamp="1576346034502">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="634" y="219" width="642" height="639" key="#random_samples/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576346034502" />
+    <state x="743" y="297" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576348057375">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="743" y="297" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576348057375" />
+    <state width="1897" height="10" key="GridCell.Tab.0.bottom" timestamp="1576348542505">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.0.bottom/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391579" />
-    <state width="1897" height="254" key="GridCell.Tab.0.center" timestamp="1576333391578">
-      <screen x="0" y="27" width="3840" height="1053" />
+    <state width="1897" height="10" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576348542505" />
+    <state width="1897" height="10" key="GridCell.Tab.0.center" timestamp="1576348542505">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.0.center/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391578" />
-    <state width="1897" height="254" key="GridCell.Tab.0.left" timestamp="1576333391578">
-      <screen x="0" y="27" width="3840" height="1053" />
+    <state width="1897" height="10" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576348542505" />
+    <state width="1897" height="10" key="GridCell.Tab.0.left" timestamp="1576348542505">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.0.left/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391578" />
-    <state width="1897" height="254" key="GridCell.Tab.0.right" timestamp="1576333391579">
-      <screen x="0" y="27" width="3840" height="1053" />
+    <state width="1897" height="10" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576348542505" />
+    <state width="1897" height="10" key="GridCell.Tab.0.right" timestamp="1576348542505">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.0.right/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391579" />
-    <state width="1897" height="254" key="GridCell.Tab.1.bottom" timestamp="1576333391583">
-      <screen x="0" y="27" width="3840" height="1053" />
+    <state width="1897" height="10" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576348542505" />
+    <state width="1897" height="10" key="GridCell.Tab.1.bottom" timestamp="1576346551649">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.1.bottom/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391583" />
-    <state width="1897" height="254" key="GridCell.Tab.1.center" timestamp="1576333391582">
-      <screen x="0" y="27" width="3840" height="1053" />
+    <state width="1897" height="10" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576346551649" />
+    <state width="1897" height="10" key="GridCell.Tab.1.center" timestamp="1576346551649">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.1.center/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391582" />
-    <state width="1897" height="254" key="GridCell.Tab.1.left" timestamp="1576333391579">
-      <screen x="0" y="27" width="3840" height="1053" />
+    <state width="1897" height="10" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576346551649" />
+    <state width="1897" height="10" key="GridCell.Tab.1.left" timestamp="1576346551649">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.1.left/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391579" />
-    <state width="1897" height="254" key="GridCell.Tab.1.right" timestamp="1576333391582">
-      <screen x="0" y="27" width="3840" height="1053" />
+    <state width="1897" height="10" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576346551649" />
+    <state width="1897" height="10" key="GridCell.Tab.1.right" timestamp="1576346551649">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.1.right/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391582" />
+    <state width="1897" height="10" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576346551649" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

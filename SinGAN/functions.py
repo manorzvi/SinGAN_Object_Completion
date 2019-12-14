@@ -289,6 +289,8 @@ def generate_dir2save(opt):
         dir2save = '%s/Paint2image/%s/%s_out' % (opt.out, opt.input_name[:-4],opt.ref_name[:-4])
         if opt.quantization_flag:
             dir2save = '%s_quantized' % dir2save
+    elif opt.mode == 'object_completion': # TODO: review. (manorz, 14/12/19)
+        dir2save = '%s/ObjectCompletion/%s/gen_start_scale=%d' % (opt.out, opt.input_name[:-4], opt.gen_start_scale)
     return dir2save
 
 def post_config(opt):
