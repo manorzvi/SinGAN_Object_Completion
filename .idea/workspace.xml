@@ -2,127 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c25cef43-d1d1-45be-8fd7-7171691c5cda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/random_samples_anlysis-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/noise_pyramids.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/noise_pyramids.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=2/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=2/noise_pyramids.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=3/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=3/noise_pyramids.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=4/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=4/noise_pyramids.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=5/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=5/noise_pyramids.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=6/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=6/noise_pyramids.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=7/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=7/noise_pyramids.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=8/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=8/noise_pyramids.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random_samples_anlysis.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=0/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=1/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SinGAN/manipulate.py" beforeDir="false" afterPath="$PROJECT_DIR$/SinGAN/manipulate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,42 +134,43 @@
       <screen x="0" y="27" width="3840" height="1053" />
     </state>
     <state x="555" y="200" width="800" height="677" key="#Inspections/0.27.3840.1053@0.27.3840.1053" timestamp="1576249593939" />
-    <state x="418" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576252359847">
-      <screen x="0" y="27" width="3840" height="1053" />
+    <state x="209" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576339751304">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="418" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.3840.1053@0.27.3840.1053" timestamp="1576252359847" />
-    <state width="1897" height="414" key="GridCell.Tab.0.bottom" timestamp="1576250248155">
+    <state x="209" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576339751304" />
+    <state width="1897" height="254" key="GridCell.Tab.0.bottom" timestamp="1576333391579">
       <screen x="0" y="27" width="3840" height="1053" />
     </state>
-    <state width="1897" height="414" key="GridCell.Tab.0.bottom/0.27.3840.1053@0.27.3840.1053" timestamp="1576250248155" />
-    <state width="1897" height="414" key="GridCell.Tab.0.center" timestamp="1576250248154">
+    <state width="1897" height="254" key="GridCell.Tab.0.bottom/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391579" />
+    <state width="1897" height="254" key="GridCell.Tab.0.center" timestamp="1576333391578">
       <screen x="0" y="27" width="3840" height="1053" />
     </state>
-    <state width="1897" height="414" key="GridCell.Tab.0.center/0.27.3840.1053@0.27.3840.1053" timestamp="1576250248154" />
-    <state width="1897" height="414" key="GridCell.Tab.0.left" timestamp="1576250248153">
+    <state width="1897" height="254" key="GridCell.Tab.0.center/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391578" />
+    <state width="1897" height="254" key="GridCell.Tab.0.left" timestamp="1576333391578">
       <screen x="0" y="27" width="3840" height="1053" />
     </state>
-    <state width="1897" height="414" key="GridCell.Tab.0.left/0.27.3840.1053@0.27.3840.1053" timestamp="1576250248153" />
-    <state width="1897" height="414" key="GridCell.Tab.0.right" timestamp="1576250248154">
+    <state width="1897" height="254" key="GridCell.Tab.0.left/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391578" />
+    <state width="1897" height="254" key="GridCell.Tab.0.right" timestamp="1576333391579">
       <screen x="0" y="27" width="3840" height="1053" />
     </state>
-    <state width="1897" height="414" key="GridCell.Tab.0.right/0.27.3840.1053@0.27.3840.1053" timestamp="1576250248154" />
-    <state width="1897" height="414" key="GridCell.Tab.1.bottom" timestamp="1576250248075">
+    <state width="1897" height="254" key="GridCell.Tab.0.right/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391579" />
+    <state width="1897" height="254" key="GridCell.Tab.1.bottom" timestamp="1576333391583">
       <screen x="0" y="27" width="3840" height="1053" />
     </state>
-    <state width="1897" height="414" key="GridCell.Tab.1.bottom/0.27.3840.1053@0.27.3840.1053" timestamp="1576250248075" />
-    <state width="1897" height="414" key="GridCell.Tab.1.center" timestamp="1576250248075">
+    <state width="1897" height="254" key="GridCell.Tab.1.bottom/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391583" />
+    <state width="1897" height="254" key="GridCell.Tab.1.center" timestamp="1576333391582">
       <screen x="0" y="27" width="3840" height="1053" />
     </state>
-    <state width="1897" height="414" key="GridCell.Tab.1.center/0.27.3840.1053@0.27.3840.1053" timestamp="1576250248075" />
-    <state width="1897" height="414" key="GridCell.Tab.1.left" timestamp="1576250248074">
+    <state width="1897" height="254" key="GridCell.Tab.1.center/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391582" />
+    <state width="1897" height="254" key="GridCell.Tab.1.left" timestamp="1576333391579">
       <screen x="0" y="27" width="3840" height="1053" />
     </state>
-    <state width="1897" height="414" key="GridCell.Tab.1.left/0.27.3840.1053@0.27.3840.1053" timestamp="1576250248074" />
-    <state width="1897" height="414" key="GridCell.Tab.1.right" timestamp="1576250248075">
+    <state width="1897" height="254" key="GridCell.Tab.1.left/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391579" />
+    <state width="1897" height="254" key="GridCell.Tab.1.right" timestamp="1576333391582">
       <screen x="0" y="27" width="3840" height="1053" />
     </state>
-    <state width="1897" height="414" key="GridCell.Tab.1.right/0.27.3840.1053@0.27.3840.1053" timestamp="1576250248075" />
+    <state width="1897" height="254" key="GridCell.Tab.1.right/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391582" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

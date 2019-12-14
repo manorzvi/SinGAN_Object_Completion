@@ -19,7 +19,7 @@ if __name__ == '__main__':
     NoiseAmp = []
 
     dir2save = functions.generate_dir2save(opt)
-
+    print(dir2save)
     if (os.path.exists(dir2save)):
         if opt.delete_previous:
             shutil.rmtree(dir2save)
