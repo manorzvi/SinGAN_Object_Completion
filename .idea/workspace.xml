@@ -2,15 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c25cef43-d1d1-45be-8fd7-7171691c5cda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=8/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=8/noise_pyramids.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_train_for_sbatch.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/object_completion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/0/G(z_opt).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/0/fake_sample.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/0/netD.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/0/netG.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/0/real_scale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/0/z_opt.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/1/G(z_opt).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/1/fake_sample.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/1/netD.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/1/netG.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/1/real_scale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/1/z_opt.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/2/G(z_opt).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/2/fake_sample.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/2/netD.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/2/netG.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/2/real_scale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/2/z_opt.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/3/G(z_opt).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/3/fake_sample.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/3/netD.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/3/netG.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/3/real_scale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/3/z_opt.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/4/G(z_opt).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/4/fake_sample.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/4/netD.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/4/netG.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/4/real_scale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/4/z_opt.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/5/G(z_opt).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/5/fake_sample.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/5/real_scale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/5/z_opt.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/Gs.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/NoiseAmp.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/Zs.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TrainedModels/indoor3/scale_factor=0.750000,alpha=10/reals.pth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=8/0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=8/0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=8/noise_pyramids.pth" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/nature7/gen_start_scale=8/noise_pyramids.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SinGAN/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/SinGAN/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_samples.py" beforeDir="false" afterPath="$PROJECT_DIR$/random_samples.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
