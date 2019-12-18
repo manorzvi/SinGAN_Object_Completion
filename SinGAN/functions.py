@@ -364,4 +364,5 @@ def plot_minibatch(minibatch : torch.Tensor, title, opt):
     if title:
         plt.title(title)
     plt.imshow(np.transpose(vutils.make_grid(minibatch.to(opt.device), padding=2, normalize=True).cpu(), (1, 2, 0)))
+
     plt.show()

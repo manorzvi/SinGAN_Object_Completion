@@ -10,6 +10,7 @@ from SinGAN.imresize import imresize
 import SinGAN.functions as functions
 from random_samples import random_samples
 import fastrcnn_mask_functions
+import matplotlib.pyplot as plt
 
 def semantic_segmentation(minibatch: torch.Tensor, opt):
     # We need two classes only - background and person
@@ -44,7 +45,6 @@ def semantic_segmentation(minibatch: torch.Tensor, opt):
 
     return masks
 
-
 def shift_masks(masks: torch.Tensor, opt):
     trans_v = opt.v_translation
     trans_h = opt.h_translation
@@ -74,7 +74,6 @@ def shift_masks(masks: torch.Tensor, opt):
         functions.plot_minibatch(shifted_masks,
                                  f'SHIFT(MASK(G(Z0...Z{opt.gen_start_scale})))), shape={shifted_masks.shape}', opt)
     return shifted_masks
-
 
 def apply_segmentation_patch(minibatch: torch.Tensor, masks: torch.Tensor, shifted_masks: torch.Tensor, opt):
     assert isinstance(minibatch, torch.Tensor), "Mini-Batch of generated images most be an instance of torch.Tensor."
@@ -111,7 +110,6 @@ def apply_segmentation_patch(minibatch: torch.Tensor, masks: torch.Tensor, shift
 
     return masked_minibatch, shifted_masked_minibatch
 
-
 def replace_patches(minibatch: torch.Tensor, masks: torch.Tensor, shifted_masks: torch.Tensor, opt):
     assert isinstance(minibatch, torch.Tensor), "Mini-Batch of generated images most be an instance of torch.Tensor."
     assert isinstance(masks, torch.Tensor), "Semantic masks based on generated images most be an" \
@@ -142,9 +140,31 @@ def replace_patches(minibatch: torch.Tensor, masks: torch.Tensor, shifted_masks:
         sample = torch.cat((sample_r[None,:,:], sample_g[None,:,:], sample_b[None,:,:]), dim=0)
 
         plt.imsave('%s/%d.mask5.png' % (dir2save, i),
-                   functions.convert_image_np(sample[None, :, :].detach()), vmin=0, vmax=1)
+                   functions.convert_image_np(sample[None,:,:,:].detach()), vmin=0, vmax=1)
 
-def creat_random_generated_masks_pyramid(masks: torch.Tensor, opt):
+        if i == 0:
+            replaced_samples = sample[None,:,:,:]
+        else:
+            replaced_samples = torch.cat((replaced_samples, sample[None,:,:,:]), dim=0)
+
+    if opt.plotting:
+        functions.plot_minibatch(replaced_samples,
+                                 f'REPLACED(G(Z0...Z{opt.gen_start_scale})))), '
+                                 f'shape={replaced_samples.shape}', opt)
+
+    return replaced_samples
+
+def plot_mask_pyramid(pyramid: list):
+    t = int(np.ceil(np.sqrt(len(pyramid))))
+    fig, axes = plt.subplots(t,t)
+    fig.tight_layout()
+    for i,mask in enumerate(pyramid):
+        axes[int(i/t), int(i%t)].imshow(np.transpose(mask.squeeze().cpu().numpy(), (1,2,0)))
+        axes[int(i/t), int(i%t)].set_title(str(mask.shape))
+
+    plt.show()
+
+def create_random_generated_masks_pyramid(masks: torch.Tensor, opt):
     pad1 = ((opt.ker_size - 1) * opt.num_layer) / 2
     m = nn.ZeroPad2d(int(pad1))
     pyramids = {}
@@ -160,6 +180,8 @@ def creat_random_generated_masks_pyramid(masks: torch.Tensor, opt):
             pyramid.append(curr_mask)
         torch.save(pyramid, ('%s/%d.mask_pyramid.pth' % (dir2save, j)))
         pyramids[j] = pyramid
+
+        # plot_mask_pyramid(pyramid)
 
     return pyramids
 
@@ -184,6 +206,7 @@ if __name__ == '__main__':
 
     opt.sem_seg_model = os.path.join(opt.sem_seg_dir, opt.sem_seg_model)
 
+    opt.pyramid = False
     Generated = random_samples(opt)
 
     if opt.plotting:
@@ -195,7 +218,13 @@ if __name__ == '__main__':
                                                       shifted_masks=shifted_masks, opt=opt)
     replace_patches(Generated, masks, shifted_masks, opt)
 
-    pyramids = creat_random_generated_masks_pyramid(masks,opt)
+    pyramids         = create_random_generated_masks_pyramid(masks,opt)
+    shifted_pyramids = create_random_generated_masks_pyramid(shifted_masks,opt)
 
+    opt.pyramid = True
+    Modified = random_samples(opt, mask_pyramid=pyramids, shifted_mask_pyramid=shifted_pyramids)
 
+    if opt.plotting:
+        functions.plot_minibatch(Modified, f'G(Z0...Z{opt.gen_start_scale}), shape={Modified.shape}\n'
+                                           f'(After Latent space arithmetic)', opt)
 

@@ -53,5 +53,6 @@ def get_arguments():
     parser.add_argument('--v_translation', '-Tv', type=int, default=10, help='Segmentation mask vertical translation.')
     parser.add_argument('--h_translation', '-Th', type=int, default=10, help='Segmentation mask horizontal translation.')
 
+
     
     return parser
