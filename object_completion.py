@@ -144,8 +144,24 @@ def replace_patches(minibatch: torch.Tensor, masks: torch.Tensor, shifted_masks:
         plt.imsave('%s/%d.mask5.png' % (dir2save, i),
                    functions.convert_image_np(sample[None, :, :].detach()), vmin=0, vmax=1)
 
-def creat_random_generated_masks_pyramid(masks: torch.Tensor):
-    pass
+def creat_random_generated_masks_pyramid(masks: torch.Tensor, opt):
+    pad1 = ((opt.ker_size - 1) * opt.num_layer) / 2
+    m = nn.ZeroPad2d(int(pad1))
+    pyramids = {}
+    dir2save = functions.generate_dir2save(opt)
+
+    for j in range(masks.shape[0]):
+        mask_t = masks[j].squeeze()
+        pyramid = []
+        for i in range(0, opt.stop_scale + 1, 1):
+            scale = math.pow(opt.scale_factor, opt.stop_scale - i)
+            curr_mask = imresize(mask_t[None,None,:,:], scale, opt)
+            curr_mask = m(curr_mask)
+            pyramid.append(curr_mask)
+        torch.save(pyramid, ('%s/%d.mask_pyramid.pth' % (dir2save, j)))
+        pyramids[j] = pyramid
+
+    return pyramids
 
 if __name__ == '__main__':
     parser = get_arguments()
@@ -169,6 +185,7 @@ if __name__ == '__main__':
     opt.sem_seg_model = os.path.join(opt.sem_seg_dir, opt.sem_seg_model)
 
     Generated = random_samples(opt)
+
     if opt.plotting:
         functions.plot_minibatch(Generated, f'G(Z0...Z{opt.gen_start_scale}), shape={Generated.shape}', opt)
 
@@ -178,7 +195,7 @@ if __name__ == '__main__':
                                                       shifted_masks=shifted_masks, opt=opt)
     replace_patches(Generated, masks, shifted_masks, opt)
 
-    pyramid = creat_random_generated_masks_pyramid(masks,opt)
+    pyramids = creat_random_generated_masks_pyramid(masks,opt)
 
 
 

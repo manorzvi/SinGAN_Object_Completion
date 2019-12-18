@@ -44,14 +44,7 @@ def get_arguments():
                         help='delete previous results directory, if exists.', default=False)
     parser.add_argument('--save_noise_pyramid', action='store_true',
                         help='for each sample, save its noise pyramid.', default=False)
-    parser.add_argument('--num_samples', type=int, default=50,
-                        help='Number of samples to generate at each run of random_samples.py')
-    parser.add_argument('--delete_previous', action='store_true', help='delete previous results directory, if exists.',
-                        default=False)
-    parser.add_argument('--save_noise_pyramid', action='store_true', help='for each sample, save its noise pyramid.',
-                        default=False)
-    parser.add_argument('--num_samples', type=int, default=50,
-                        help='Number of samples to generate at each run of random_samples.py')
+    parser.add_argument('--num_samples', type=int, default=50, help='How many samples to generate at random_samples.py')
     parser.add_argument('--plotting', action='store_true', default=False,
                         help='Plot images at selected points (which is important to examine to process)')
     parser.add_argument('--sem_seg_dir', default='models', help='Semantic segmentation trained models directory')

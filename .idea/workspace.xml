@@ -2,9 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c25cef43-d1d1-45be-8fd7-7171691c5cda" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/0.mask1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/0.mask2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/0.mask3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/0.mask4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/0.mask5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/0.mask_pyramid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/1.mask1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/1.mask2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/1.mask3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/1.mask4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/1.mask5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/1.mask_pyramid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=0/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=0/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=0/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=0/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=0/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=0/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=0/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=0/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=0/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=0/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=9/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=9/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=9/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=9/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=9/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=9/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=9/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=9/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=9/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/chinese_woman/gen_start_scale=9/9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SinGAN/manipulate.py" beforeDir="false" afterPath="$PROJECT_DIR$/SinGAN/manipulate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_train.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/object_completion.py" beforeDir="false" afterPath="$PROJECT_DIR$/object_completion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/random_samples.py" beforeDir="false" afterPath="$PROJECT_DIR$/random_samples.py" afterDir="false" />
     </list>
@@ -72,7 +106,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/object_completion.py" />
-      <option name="PARAMETERS" value="--input_name chinese_woman.jpg --input_dir Input/People --mode object_completion --gen_start_scale 8 --not_cuda --num_samples 2 --delete_previous --sem_seg_dir models --sem_seg_model fastrcnn_segmentation_model_12182019-073152.pth --plotting -Tv 0 -Th 100" />
+      <option name="PARAMETERS" value="--input_name chinese_woman.jpg --input_dir Input/People --mode object_completion --gen_start_scale 9 --not_cuda --num_samples 2 --delete_previous --sem_seg_dir models --sem_seg_model fastrcnn_segmentation_model_12182019-073152.pth --plotting -Tv 0 -Th 100 --min_size 32 --max_size 512" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -93,7 +127,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/random_samples.py" />
-      <option name="PARAMETERS" value="--input_name balloons.png --input_dir Input/Images --mode random_samples --gen_start_scale 0 --not_cuda --num_samples 2 --delete_previous" />
+      <option name="PARAMETERS" value="--input_name chinese_woman.jpg --input_dir Input/People --mode random_samples --gen_start_scale 0 --not_cuda --num_samples 10 --delete_previous" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -159,11 +193,11 @@
       <screen x="0" y="27" width="3840" height="1053" />
     </state>
     <state x="555" y="200" width="800" height="677" key="#Inspections/0.27.3840.1053@0.27.3840.1053" timestamp="1576249593939" />
-    <state x="224" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576673229411">
+    <state x="224" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576687628122">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="418" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.3840.1053@0.27.3840.1053" timestamp="1576252359847" />
-    <state x="224" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576673229411" />
+    <state x="224" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576687628122" />
     <state x="634" y="219" width="642" height="639" key="#object_completion" timestamp="1576346492028">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -176,46 +210,46 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="743" y="297" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576348057375" />
-    <state width="1897" height="209" key="GridCell.Tab.0.bottom" timestamp="1576674863275">
+    <state width="1897" height="303" key="GridCell.Tab.0.bottom" timestamp="1576689241791">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.0.bottom/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391579" />
-    <state width="1897" height="209" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576674863275" />
-    <state width="1897" height="209" key="GridCell.Tab.0.center" timestamp="1576674863275">
+    <state width="1897" height="303" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576689241791" />
+    <state width="1897" height="303" key="GridCell.Tab.0.center" timestamp="1576689241791">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.0.center/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391578" />
-    <state width="1897" height="209" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576674863275" />
-    <state width="1897" height="209" key="GridCell.Tab.0.left" timestamp="1576674863275">
+    <state width="1897" height="303" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576689241791" />
+    <state width="1897" height="303" key="GridCell.Tab.0.left" timestamp="1576689241791">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.0.left/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391578" />
-    <state width="1897" height="209" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576674863275" />
-    <state width="1897" height="209" key="GridCell.Tab.0.right" timestamp="1576674863275">
+    <state width="1897" height="303" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576689241791" />
+    <state width="1897" height="303" key="GridCell.Tab.0.right" timestamp="1576689241791">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.0.right/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391579" />
-    <state width="1897" height="209" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576674863275" />
-    <state width="1897" height="101" key="GridCell.Tab.1.bottom" timestamp="1576674833958">
+    <state width="1897" height="303" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576689241791" />
+    <state width="1897" height="287" key="GridCell.Tab.1.bottom" timestamp="1576688526362">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.1.bottom/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391583" />
-    <state width="1897" height="101" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576674833958" />
-    <state width="1897" height="101" key="GridCell.Tab.1.center" timestamp="1576674833958">
+    <state width="1897" height="287" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576688526362" />
+    <state width="1897" height="287" key="GridCell.Tab.1.center" timestamp="1576688526362">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.1.center/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391582" />
-    <state width="1897" height="101" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576674833958" />
-    <state width="1897" height="101" key="GridCell.Tab.1.left" timestamp="1576674833957">
+    <state width="1897" height="287" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576688526362" />
+    <state width="1897" height="287" key="GridCell.Tab.1.left" timestamp="1576688526362">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.1.left/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391579" />
-    <state width="1897" height="101" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576674833957" />
-    <state width="1897" height="101" key="GridCell.Tab.1.right" timestamp="1576674833958">
+    <state width="1897" height="287" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576688526362" />
+    <state width="1897" height="287" key="GridCell.Tab.1.right" timestamp="1576688526362">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.1.right/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391582" />
-    <state width="1897" height="101" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576674833958" />
+    <state width="1897" height="287" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576688526362" />
     <state width="960" height="541" key="XDebugger.FullValuePopup" timestamp="1576671295616">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -228,5 +262,21 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="623" y="237" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576649850570" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/random_samples.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/SinGAN/functions.py</url>
+          <line>219</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

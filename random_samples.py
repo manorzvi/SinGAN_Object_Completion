@@ -67,11 +67,9 @@ def random_samples(opt):
         functions.adjust_scales2image(real, opt)
         Gs, Zs, reals, NoiseAmp = functions.load_trained_pyramid(opt)
         in_s = functions.generate_in2coarsest(reals, 1, 1, opt)
-        # TODO: due to the BUG inside SinGAN_generate (see comment inside),
-        #  we set n=2 instead of n=0 as default. (manorz, 12/18/19)
         return SinGAN_generate(Gs, Zs, reals, NoiseAmp, opt,
                                gen_start_scale=opt.gen_start_scale, num_samples=opt.num_samples,
-                               Ns=(Ns if opt.save_noise_pyramid else None), n=2)
+                               Ns=(Ns if opt.save_noise_pyramid else None))
 
 if __name__ == '__main__':
     parser = get_arguments()

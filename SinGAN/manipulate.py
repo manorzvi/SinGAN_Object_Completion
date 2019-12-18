@@ -90,9 +90,9 @@ def generate_gif(Gs,Zs,reals,NoiseAmp,opt,alpha=0.1,beta=0.9,start_scale=2,fps=1
 def SinGAN_generate(Gs,Zs,reals,NoiseAmp,
                     opt,in_s=None,scale_v=1,scale_h=1,n=0,
                     gen_start_scale=0,num_samples=50, Ns=None):
-    # print(f'|reals|={len(reals)} , |Gs|={len(Gs)}')
     # TODO: BUG. trained relatively large image with max_size=1024, min_size=32 (on chinese_woman.jpg),
     #  and got 12 scales for reals and only 10 scales for Gs,Zs,NoiseAmp
+    # print(f'|reals|={len(reals)} , |Gs|={len(Gs)}')
     assert (opt.save_noise_pyramid and Ns is not None) or not opt.save_noise_pyramid, "if save_noise_pyramid " \
                                                                                       "option is active, " \
                                                                                       "you must provide Ns - " \
