@@ -87,17 +87,30 @@ def generate_gif(Gs,Zs,reals,NoiseAmp,opt,alpha=0.1,beta=0.9,start_scale=2,fps=1
     imageio.mimsave('%s/start_scale=%d/alpha=%f_beta=%f.gif' % (dir2save,start_scale,alpha,beta),images_cur,fps=fps)
     del images_cur
 
-def SinGAN_generate(Gs,Zs,reals,NoiseAmp,opt,in_s=None,scale_v=1,scale_h=1,n=0,gen_start_scale=0,num_samples=50, Ns=None):
-    assert opt.save_noise_pyramid and Ns is not None, "if save_noise_pyramid option is active," \
-                                                      "you must provide Ns - a nested dictionary to save" \
-                                                      "the intermediate noises."
-    assert isinstance(Ns, dict)
+def SinGAN_generate(Gs,Zs,reals,NoiseAmp,
+                    opt,in_s=None,scale_v=1,scale_h=1,n=0,
+                    gen_start_scale=0,num_samples=50, Ns=None):
+    # print(f'|reals|={len(reals)} , |Gs|={len(Gs)}')
+    # TODO: BUG. trained relatively large image with max_size=1024, min_size=32 (on chinese_woman.jpg),
+    #  and got 12 scales for reals and only 10 scales for Gs,Zs,NoiseAmp
+    assert (opt.save_noise_pyramid and Ns is not None) or not opt.save_noise_pyramid, "if save_noise_pyramid " \
+                                                                                      "option is active, " \
+                                                                                      "you must provide Ns - " \
+                                                                                      "a nested dictionary to save " \
+                                                                                      "the intermediate noises."
+    if opt.save_noise_pyramid:
+        assert isinstance(Ns, dict)
+    # TODO: review. init Generated to None.
+    #  later on would be populated by generated images. (manorz, 12/18/19)
+    if opt.mode == 'object_completion':
+        Generated = None
 
     #if torch.is_tensor(in_s) == False:
     if in_s is None:
         in_s = torch.full(reals[0].shape, 0, device=opt.device)
     images_cur = []
     for G,Z_opt,noise_amp in zip(Gs,Zs,NoiseAmp):
+        # print(f'n={n}')
         pad1 = ((opt.ker_size-1)*opt.num_layer)/2
         m = nn.ZeroPad2d(int(pad1))
         nzx = (Z_opt.shape[2]-pad1*2)*scale_v
@@ -107,6 +120,7 @@ def SinGAN_generate(Gs,Zs,reals,NoiseAmp,opt,in_s=None,scale_v=1,scale_h=1,n=0,g
         images_cur = []
 
         for i in range(0,num_samples,1):
+            # print(f'\ti={i}')
             if n == 0: # Single-channel noise map only in the first scale
                 z_curr = functions.generate_noise([1,nzx,nzy], device=opt.device)
                 z_curr = z_curr.expand(1,3,z_curr.shape[2],z_curr.shape[3])
@@ -155,6 +169,11 @@ def SinGAN_generate(Gs,Zs,reals,NoiseAmp,opt,in_s=None,scale_v=1,scale_h=1,n=0,g
                     plt.imsave('%s/%d.png' % (dir2save, i), functions.convert_image_np(I_curr.detach()), vmin=0,vmax=1)
                     #plt.imsave('%s/%d_%d.png' % (dir2save,i,n),functions.convert_image_np(I_curr.detach()), vmin=0, vmax=1)
                     #plt.imsave('%s/in_s.png' % (dir2save), functions.convert_image_np(in_s), vmin=0,vmax=1)
+                # TODO: review create a mini-batch of generated images. (manorz, 12/18/19)
+                if   (opt.mode == 'object_completion') and not isinstance(Generated, torch.Tensor):
+                    Generated = I_curr.detach()
+                elif opt.mode == 'object_completion':
+                    Generated = torch.cat((Generated,I_curr), dim=0)
             images_cur.append(I_curr)
         n+=1
 
@@ -163,5 +182,7 @@ def SinGAN_generate(Gs,Zs,reals,NoiseAmp,opt,in_s=None,scale_v=1,scale_h=1,n=0,g
         file2save = os.path.join(dir2save,'noise_pyramids.pth')
         torch.save(Ns, file2save)
 
-    return I_curr.detach()
-
+    # TODO: review. only in 'object_detection' mode we need to return the generated images.
+    #  Elsewhere we only need to save them. (manorz, 12/18/19)
+    if opt.mode == 'object_completion':
+        return Generated.detach()

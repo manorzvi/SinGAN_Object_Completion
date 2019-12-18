@@ -48,7 +48,8 @@ def random_samples(opt):
         Gs, Zs, reals, NoiseAmp = functions.load_trained_pyramid(opt)
         in_s = functions.generate_in2coarsest(reals, 1, 1, opt)
         SinGAN_generate(Gs, Zs, reals, NoiseAmp, opt,
-                        gen_start_scale=opt.gen_start_scale, num_samples=opt.num_samples, Ns=Ns)
+                        gen_start_scale=opt.gen_start_scale, num_samples=opt.num_samples,
+                        Ns=(Ns if opt.save_noise_pyramid else None))
 
     elif opt.mode == 'random_samples_arbitrary_sizes':
         real = functions.read_image(opt)
@@ -56,16 +57,21 @@ def random_samples(opt):
         Gs, Zs, reals, NoiseAmp = functions.load_trained_pyramid(opt)
         in_s = functions.generate_in2coarsest(reals, opt.scale_v, opt.scale_h, opt)
         SinGAN_generate(Gs, Zs, reals, NoiseAmp, opt, in_s, scale_v=opt.scale_v, scale_h=opt.scale_h,
-                        num_samples=opt.num_samples, Ns=Ns)
+                        num_samples=opt.num_samples,
+                        Ns=(Ns if opt.save_noise_pyramid else None))
 
     elif opt.mode == 'object_completion':
         real = functions.read_image(opt)
+        if opt.plotting:
+            functions.plot_minibatch(real, f'Original Real, shape={real.shape}', opt)
         functions.adjust_scales2image(real, opt)
         Gs, Zs, reals, NoiseAmp = functions.load_trained_pyramid(opt)
         in_s = functions.generate_in2coarsest(reals, 1, 1, opt)
-        generated = SinGAN_generate(Gs, Zs, reals, NoiseAmp, opt,
-                                    gen_start_scale=opt.gen_start_scale, num_samples=opt.num_samples, Ns=Ns)
-        print(generated)
+        # TODO: due to the BUG inside SinGAN_generate (see comment inside),
+        #  we set n=2 instead of n=0 as default. (manorz, 12/18/19)
+        return SinGAN_generate(Gs, Zs, reals, NoiseAmp, opt,
+                               gen_start_scale=opt.gen_start_scale, num_samples=opt.num_samples,
+                               Ns=(Ns if opt.save_noise_pyramid else None), n=2)
 
 if __name__ == '__main__':
     print(os.getcwd())

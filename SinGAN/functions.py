@@ -193,27 +193,15 @@ def save_networks(netG,netD,z,opt):
     torch.save(z, '%s/z_opt.pth' % (opt.outf))
 
 def adjust_scales2image(real_,opt):
-    #opt.num_scales = int((math.log(math.pow(opt.min_size / (real_.shape[2]), 1), opt.scale_factor_init))) + 1
     opt.num_scales = math.ceil((math.log(math.pow(opt.min_size / (min(real_.shape[2],
-                                                                      real_.shape[3])),
-                                                  1),
+                                                                      real_.shape[3])), 1),
                                          opt.scale_factor_init))) + 1
-    scale2stop     = math.ceil(math.log(min([opt.max_size,
-                                             max([real_.shape[2],
-                                                  real_.shape[3]])]) / max([real_.shape[2],
-                                                                            real_.shape[3]]),
-                                        opt.scale_factor_init))
+    scale2stop     = math.ceil(math.log(min([opt.max_size,max([real_.shape[2],real_.shape[3]])]) / max([real_.shape[2],real_.shape[3]]),opt.scale_factor_init))
 
     opt.stop_scale   = opt.num_scales - scale2stop
-    opt.scale1       = min(opt.max_size / max([real_.shape[2], real_.shape[3]]),1)  # min(250/max([real_.shape[0],real_.shape[1]]),1)
+    opt.scale1       = min(opt.max_size / max([real_.shape[2], real_.shape[3]]),1)
     real             = imresize(real_, opt.scale1, opt)
-    #opt.scale_factor = math.pow(opt.min_size / (real.shape[2]), 1 / (opt.stop_scale))
     opt.scale_factor = math.pow(opt.min_size/(min(real.shape[2],real.shape[3])),1/(opt.stop_scale))
-    scale2stop       = math.ceil(math.log(min([opt.max_size,
-                                               max([real_.shape[2],real_.shape[3]])])/max([real_.shape[2],
-                                                                                           real_.shape[3]]),
-                                          opt.scale_factor_init))
-    opt.stop_scale   = opt.num_scales - scale2stop
     return real
 
 def adjust_scales2image_SR(real_,opt):
@@ -257,6 +245,9 @@ def load_trained_pyramid(opt, mode_='train'):
     return Gs,Zs,reals,NoiseAmp
 
 def generate_in2coarsest(reals,scale_v,scale_h,opt):
+    # TODO: review assertion. (manorz, 12/18/19)
+    assert opt.gen_start_scale < len(reals), "start_scale most be smaller than |reals| (number of scales in the pyramid)"
+
     real = reals[opt.gen_start_scale]
     real_down = upsampling(real, scale_v * real.shape[2], scale_h * real.shape[3])
     if opt.gen_start_scale == 0:
@@ -348,7 +339,6 @@ def quant2centers(paint, centers):
 
     return paint
 
-
 def dilate_mask(mask,opt):
     if opt.mode == "harmonization":
         element = morphology.disk(radius=7)
@@ -367,4 +357,12 @@ def dilate_mask(mask,opt):
     mask = (mask-mask.min())/(mask.max()-mask.min())
     return mask
 
-
+# TODO: review helper function for mini-batch plotting. (manorz, 12/18/19)
+import torchvision.utils as vutils
+def plot_minibatch(minibatch : torch.Tensor, title, opt):
+    plt.figure(figsize=(12, 12))
+    plt.axis("off")
+    if title:
+        plt.title(title)
+    plt.imshow(np.transpose(vutils.make_grid(minibatch.to(opt.device), padding=2, normalize=True).cpu(), (1, 2, 0)))
+    plt.show()
