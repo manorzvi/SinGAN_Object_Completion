@@ -144,24 +144,8 @@ def replace_patches(minibatch: torch.Tensor, masks: torch.Tensor, shifted_masks:
         plt.imsave('%s/%d.mask5.png' % (dir2save, i),
                    functions.convert_image_np(sample[None, :, :].detach()), vmin=0, vmax=1)
 
-def creat_random_generated_masks_pyramid(masks: torch.Tensor, opt):
-    assert isinstance(masks, torch.Tensor), "Semantic masks based on generated images most be an" \
-                                            "instance of torch.Tensor."
-    print(masks.shape)
-    masks_scale_factor = math.pow(opt.min_size/(min(masks.shape[2],masks.shape[3])),1/(opt.stop_scale))
-
-    for i in range(masks.shape[0]):
-        mask_t = masks[i]
-        pyramid = []
-        for i in range(0,opt.stop_scale+1,1):
-            print(i)
-            scale = math.pow(masks_scale_factor,opt.stop_scale-i)
-            print('\t',scale)
-            curr_mask_t = imresize(mask_t[None,:,:,:],scale,opt)
-            print(curr_mask_t.shape)
-            pyramid.append(curr_mask_t)
-
-    return pyramid
+def creat_random_generated_masks_pyramid(masks: torch.Tensor):
+    pass
 
 if __name__ == '__main__':
     parser = get_arguments()

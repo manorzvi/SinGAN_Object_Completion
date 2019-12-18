@@ -2,119 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c25cef43-d1d1-45be-8fd7-7171691c5cda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/create_mask_fastrcnn-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/random_samples_anlysis-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/torchvision_finetuning_instance_segmentation-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Input/People/chinese_woman.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/0.mask1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/0.mask2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/0.mask3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/0.mask4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/0.mask5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/1.mask1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/1.mask2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/1.mask3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/1.mask4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/1.mask5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=8/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/balloons/gen_start_scale=0/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/0/G(z_opt).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/0/fake_sample.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/0/netD.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/0/netG.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/0/real_scale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/0/z_opt.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/1/G(z_opt).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/1/fake_sample.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/1/netD.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/1/netG.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/1/real_scale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/1/z_opt.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/10/real_scale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/2/G(z_opt).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/2/fake_sample.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/2/netD.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/2/netG.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/2/real_scale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/2/z_opt.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/3/G(z_opt).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/3/fake_sample.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/3/netD.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/3/netG.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/3/real_scale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/3/z_opt.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/4/G(z_opt).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/4/fake_sample.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/4/netD.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/4/netG.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/4/real_scale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/4/z_opt.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/5/G(z_opt).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/5/fake_sample.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/5/netD.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/5/netG.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/5/real_scale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/5/z_opt.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/6/G(z_opt).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/6/fake_sample.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/6/netD.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/6/netG.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/6/real_scale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/6/z_opt.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/7/G(z_opt).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/7/fake_sample.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/7/netD.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/7/netG.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/7/real_scale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/7/z_opt.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/8/G(z_opt).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/8/fake_sample.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/8/netD.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/8/netG.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/8/real_scale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/8/z_opt.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/9/G(z_opt).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/9/fake_sample.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/9/netD.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/9/netG.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/9/real_scale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/9/z_opt.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/Gs.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/NoiseAmp.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/Zs.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TrainedModels/chinese_woman/scale_factor=0.750000,alpha=10/reals.pth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Input/People/chuttersnap-qvT_629hapk-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/noise_pyramids.pth" beforeDir="false" afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=0/noise_pyramids.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=8/0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=8/0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=8/noise_pyramids.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/balloons/gen_start_scale=0/0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Output/RandomSamples/balloons/gen_start_scale=0/0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/RandomSamples/balloons/gen_start_scale=0/noise_pyramids.pth" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SinGAN/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/SinGAN/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SinGAN/manipulate.py" beforeDir="false" afterPath="$PROJECT_DIR$/SinGAN/manipulate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_mask_fastrcnn.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/create_mask_fastrcnn.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_train_for_sbatch.sh" beforeDir="false" afterPath="$PROJECT_DIR$/main_train_for_sbatch.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/object_completion.py" beforeDir="false" afterPath="$PROJECT_DIR$/object_completion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_samples.py" beforeDir="false" afterPath="$PROJECT_DIR$/random_samples.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/torchvision_finetuning_instance_segmentation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/torchvision_finetuning_instance_segmentation.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,21 +226,5 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="623" y="237" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576649850570" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/SinGAN/functions.py</url>
-          <line>221</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/SinGAN/functions.py</url>
-          <line>195</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
