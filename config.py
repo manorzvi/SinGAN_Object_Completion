@@ -40,5 +40,25 @@ def get_arguments():
     parser.add_argument('--lambda_grad',type=float, help='gradient penelty weight',default=0.1)
     parser.add_argument('--alpha',type=float, help='reconstruction loss weight',default=10)
 
+    parser.add_argument('--delete_previous', action='store_true',
+                        help='delete previous results directory, if exists.', default=False)
+    parser.add_argument('--save_noise_pyramid', action='store_true',
+                        help='for each sample, save its noise pyramid.', default=False)
+    parser.add_argument('--num_samples', type=int, default=50,
+                        help='Number of samples to generate at each run of random_samples.py')
+    parser.add_argument('--delete_previous', action='store_true', help='delete previous results directory, if exists.',
+                        default=False)
+    parser.add_argument('--save_noise_pyramid', action='store_true', help='for each sample, save its noise pyramid.',
+                        default=False)
+    parser.add_argument('--num_samples', type=int, default=50,
+                        help='Number of samples to generate at each run of random_samples.py')
+    parser.add_argument('--plotting', action='store_true', default=False,
+                        help='Plot images at selected points (which is important to examine to process)')
+    parser.add_argument('--sem_seg_dir', default='models', help='Semantic segmentation trained models directory')
+    parser.add_argument('--sem_seg_model', help='Semantic segmentation trained model.')
+    parser.add_argument('--mask_threshold', default=0.01, help='Threshold for segmentation masking')
+    parser.add_argument('--v_translation', '-Tv', type=int, default=10, help='Segmentation mask vertical translation.')
+    parser.add_argument('--h_translation', '-Th', type=int, default=10, help='Segmentation mask horizontal translation.')
+
     
     return parser

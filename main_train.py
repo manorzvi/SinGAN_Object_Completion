@@ -9,7 +9,6 @@ if __name__ == '__main__':
     parser.add_argument('--input_dir',                      help='input image dir', default='Input/Images')
     parser.add_argument('--input_name',      required=True, help='input image name')
     parser.add_argument('--mode',                           help='task to be done', default='train')
-    parser.add_argument('--delete_previous', action='store_true',     help='delete previous run results directory, if exists.', default=False)
     opt = parser.parse_args()
     opt = functions.post_config(opt)
 

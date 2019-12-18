@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c25cef43-d1d1-45be-8fd7-7171691c5cda" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SinGAN/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/SinGAN/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_train.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/object_completion.py" beforeDir="false" afterPath="$PROJECT_DIR$/object_completion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_samples.py" beforeDir="false" afterPath="$PROJECT_DIR$/random_samples.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
