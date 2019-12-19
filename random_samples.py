@@ -110,7 +110,7 @@ if __name__ == '__main__':
 
     opt = parser.parse_args()
     opt = functions.post_config(opt)
-
+    opt.pyramid = False
     random_samples(opt)
 
 
