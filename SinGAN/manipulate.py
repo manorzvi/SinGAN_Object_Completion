@@ -160,15 +160,15 @@ def SinGAN_generate(Gs,Zs,reals,NoiseAmp,
             if n < gen_start_scale:
                 z_curr = Z_opt
                 # TODO: Ask Tamar: why Zs is all zeros except the first scale? (manorz, 12/18/19)
-                # functions.plot_minibatch(z_curr,f'DEBUG (REMOVE LATER)\n'
-                #                                 f'z_crr\n'
-                #                                 f'(scale={n}, image={i})', opt) #TODO: remove later (manorz, 12/18/19)
+                functions.plot_minibatch(z_curr,f'DEBUG (REMOVE LATER)\n'
+                                                f'z_crr\n'
+                                                f'(scale={n}, image={i})', opt) #TODO: remove later (manorz, 12/18/19)
 
             if opt.pyramid and n == 0:
                 z_curr = manipulate_single_scale(z_curr, mask_pyramid[i][n], shifted_mask_pyramid[i][n])
-                # functions.plot_minibatch(z_curr,f'DEBUG (REMOVE LATER)\n'
-                #                                 f'z_crr after mask\n'
-                #                                 f'(scale={n}, image={i})',opt) # TODO: remove later (manorz, 12/18/19)
+                functions.plot_minibatch(z_curr,f'DEBUG (REMOVE LATER)\n'
+                                                f'z_crr after mask\n'
+                                                f'(scale={n}, image={i})',opt) # TODO: remove later (manorz, 12/18/19)
 
             z_in = noise_amp*(z_curr)+I_prev
             I_curr = G(z_in.detach(),I_prev)

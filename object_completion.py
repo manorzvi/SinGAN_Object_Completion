@@ -27,6 +27,8 @@ def semantic_segmentation(minibatch: torch.Tensor, opt):
     with torch.no_grad():
         prediction = model(minibatch)
 
+    assert len(prediction[0]['masks']) != 0, "No segmentation masks found! Abort."
+
     masks = prediction[0]['masks']
     for i in range(1, len(prediction)):
         masks = torch.cat((masks,prediction[i]['masks']), dim=0)
