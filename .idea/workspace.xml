@@ -2,55 +2,120 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c25cef43-d1d1-45be-8fd7-7171691c5cda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=0/0.mask1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=0/0.mask3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=0/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=0/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=1/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=1/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=2/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=2/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=0/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=0/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=0/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=0/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=0/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=0/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=0/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=0/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=0/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=0/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=1/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=1/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=1/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=1/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=1/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=1/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=1/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=1/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=1/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=1/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=2/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=2/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=2/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=2/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=2/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=2/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=2/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=2/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=2/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=2/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=9/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=9/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=9/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=9/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=9/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=9/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=9/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=9/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=9/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/RandomSamples/indoor3/gen_start_scale=9/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/tmp_notebook-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese1/gen_start_scale=9/real.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=0/mask0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=0/mask0_pyramid.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=0/mask_s0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=0/masked0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=0/masked_s0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=0/real.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=0/regenerated0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=0/regenerated1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=0/replace0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/mask0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/mask0_pyramid.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/mask_s0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/masked0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/masked_s0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/real.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/regenerated0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/regenerated1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/replace0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/mask0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/mask0_pyramid.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/mask_s0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/masked0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/masked_s0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/real.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/regenerated0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/regenerated1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=9/replace0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=9/real.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=9/mask0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=9/mask0_pyramid.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=9/mask_s0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=9/masked0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=9/masked_s0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=9/real.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=9/replace0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mask_s_tmp.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mask_tmp.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/object_completion_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp_notebook.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese1/gen_start_scale=0/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese1/gen_start_scale=0/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese1/gen_start_scale=8/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese1/gen_start_scale=8/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=0/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=0/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=1/0.mask1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=1/0.mask2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=1/0.mask3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=1/0.mask4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=1/0.mask5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=1/0.mask_pyramid.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=1/0.modify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=1/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=1/1.mask1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=1/1.mask2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=1/1.mask3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=1/1.mask4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=1/1.mask5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=1/1.mask_pyramid.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=1/1.modify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=1/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/0.mask1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/0.mask2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/0.mask3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/0.mask4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/0.mask5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/0.mask_pyramid.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/0.modify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/1.mask1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/1.mask2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/1.mask3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/1.mask4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/1.mask5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/1.mask_pyramid.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/1.modify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=2/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/0.mask1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/0.mask2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/0.mask3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/0.mask4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/0.mask5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/0.mask_pyramid.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/0.modify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/1.mask1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/1.mask2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/1.mask3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/1.mask4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/1.mask5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/1.mask_pyramid.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/1.modify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/chinese_woman/gen_start_scale=8/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=0/0.mask1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=0/0.mask3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=0/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=0/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=1/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=1/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=2/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=2/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=9/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/indoor3/gen_start_scale=9/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=2/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=2/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=3/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=3/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=9/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ObjectCompletion/nature7/gen_start_scale=9/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SinGAN/manipulate.py" beforeDir="false" afterPath="$PROJECT_DIR$/SinGAN/manipulate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_samples.py" beforeDir="false" afterPath="$PROJECT_DIR$/random_samples.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +146,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.object_completion">
+  <component name="RunManager" selected="Python.object_completion_v2">
     <configuration name="main_train" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SinGAN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,6 +189,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="object_completion_v2" type="PythonConfigurationType" factoryName="Python">
+      <module name="SinGAN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/object_completion_v2.py" />
+      <option name="PARAMETERS" value="--input_name nature7.jpg --input_dir Input/People --mode object_completion --gen_start_scale 9 --not_cuda --num_samples 2 --delete_previous --sem_seg_dir models --sem_seg_model fastrcnn_segmentation_model_12182019-073152.pth -Tv 0 -Th 300 --min_size 32 --max_size 512 --plotting" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="random_samples" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SinGAN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,6 +233,7 @@
     </configuration>
     <list>
       <item itemvalue="Python.object_completion" />
+      <item itemvalue="Python.object_completion_v2" />
       <item itemvalue="Python.main_train" />
       <item itemvalue="Python.random_samples" />
     </list>
@@ -203,11 +290,11 @@
       <screen x="0" y="27" width="3840" height="1053" />
     </state>
     <state x="555" y="200" width="800" height="677" key="#Inspections/0.27.3840.1053@0.27.3840.1053" timestamp="1576249593939" />
-    <state x="224" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576740607706">
+    <state x="224" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576762959875">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="418" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.3840.1053@0.27.3840.1053" timestamp="1576252359847" />
-    <state x="224" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576740607706" />
+    <state x="224" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576762959875" />
     <state x="634" y="219" width="642" height="639" key="#object_completion" timestamp="1576346492028">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -216,54 +303,54 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="634" y="219" width="642" height="639" key="#random_samples/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576346034502" />
-    <state x="743" y="297" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576348057375">
+    <state x="743" y="297" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576742015226">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="743" y="297" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576348057375" />
-    <state width="1897" height="281" key="GridCell.Tab.0.bottom" timestamp="1576740612761">
+    <state x="743" y="297" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576742015226" />
+    <state width="1897" height="351" key="GridCell.Tab.0.bottom" timestamp="1576763388004">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.0.bottom/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391579" />
-    <state width="1897" height="281" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576740612761" />
-    <state width="1897" height="281" key="GridCell.Tab.0.center" timestamp="1576740612761">
+    <state width="1897" height="351" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576763388004" />
+    <state width="1897" height="351" key="GridCell.Tab.0.center" timestamp="1576763388003">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.0.center/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391578" />
-    <state width="1897" height="281" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576740612761" />
-    <state width="1897" height="281" key="GridCell.Tab.0.left" timestamp="1576740612761">
+    <state width="1897" height="351" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576763388003" />
+    <state width="1897" height="351" key="GridCell.Tab.0.left" timestamp="1576763388003">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.0.left/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391578" />
-    <state width="1897" height="281" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576740612761" />
-    <state width="1897" height="281" key="GridCell.Tab.0.right" timestamp="1576740612761">
+    <state width="1897" height="351" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576763388003" />
+    <state width="1897" height="351" key="GridCell.Tab.0.right" timestamp="1576763388003">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.0.right/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391579" />
-    <state width="1897" height="281" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576740612761" />
-    <state width="1897" height="152" key="GridCell.Tab.1.bottom" timestamp="1576703126965">
+    <state width="1897" height="351" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576763388003" />
+    <state width="1897" height="351" key="GridCell.Tab.1.bottom" timestamp="1576763388004">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.1.bottom/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391583" />
-    <state width="1897" height="152" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576703126965" />
-    <state width="1897" height="152" key="GridCell.Tab.1.center" timestamp="1576703126965">
+    <state width="1897" height="351" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576763388004" />
+    <state width="1897" height="351" key="GridCell.Tab.1.center" timestamp="1576763388004">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.1.center/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391582" />
-    <state width="1897" height="152" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576703126965" />
-    <state width="1897" height="152" key="GridCell.Tab.1.left" timestamp="1576703126965">
+    <state width="1897" height="351" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576763388004" />
+    <state width="1897" height="351" key="GridCell.Tab.1.left" timestamp="1576763388004">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.1.left/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391579" />
-    <state width="1897" height="152" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576703126965" />
-    <state width="1897" height="152" key="GridCell.Tab.1.right" timestamp="1576703126965">
+    <state width="1897" height="351" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576763388004" />
+    <state width="1897" height="351" key="GridCell.Tab.1.right" timestamp="1576763388004">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="254" key="GridCell.Tab.1.right/0.27.3840.1053@0.27.3840.1053" timestamp="1576333391582" />
-    <state width="1897" height="152" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576703126965" />
-    <state width="960" height="541" key="XDebugger.FullValuePopup" timestamp="1576671295616">
+    <state width="1897" height="351" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576763388004" />
+    <state width="960" height="541" key="XDebugger.FullValuePopup" timestamp="1576763367902">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="960" height="541" key="XDebugger.FullValuePopup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576671295616" />
+    <state width="960" height="541" key="XDebugger.FullValuePopup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576763367902" />
     <state x="510" y="278" width="890" height="522" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1576670253562">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -277,9 +364,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/SinGAN/functions.py</url>
-          <line>219</line>
-          <option name="timeStamp" value="28" />
+          <url>file://$PROJECT_DIR$/object_completion.py</url>
+          <line>216</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/SinGAN/manipulate.py</url>
+          <line>112</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/SinGAN/manipulate.py</url>
+          <line>102</line>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

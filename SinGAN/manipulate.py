@@ -20,6 +20,8 @@ import matplotlib.pyplot as plt
 from SinGAN.training import *
 from config import get_arguments
 from pprint import pprint
+import sys
+np.set_printoptions(threshold=sys.maxsize)
 
 def generate_gif(Gs,Zs,reals,NoiseAmp,opt,alpha=0.1,beta=0.9,start_scale=2,fps=10):
 
@@ -87,26 +89,37 @@ def generate_gif(Gs,Zs,reals,NoiseAmp,opt,alpha=0.1,beta=0.9,start_scale=2,fps=1
     imageio.mimsave('%s/start_scale=%d/alpha=%f_beta=%f.gif' % (dir2save,start_scale,alpha,beta),images_cur,fps=fps)
     del images_cur
 
-def manipulate_single_scale(Z: torch.Tensor, mask: torch.Tensor, m_shift: torch.Tensor):
+def manipulate_single_scale(Z: torch.Tensor, mask: torch.Tensor, opt):
+    assert Z.shape[2] == mask.shape[2] and Z.shape[3] == mask.shape[3], "mask and z most have the same dimensions."
     m_t = mask.squeeze()
-    m_shift_t = m_shift.squeeze()
     Z_r = Z.squeeze()[0,:,:].squeeze()
     Z_g = Z.squeeze()[1,:,:].squeeze()
     Z_b = Z.squeeze()[2,:,:].squeeze()
+
+    # TODO: find a method to set those accordingly to the translation in the highest scale. (manorz, 12/19/19)
+    trans_v = 0
+    trans_h = 10
+
+    ind = (m_t == 1).nonzero()
+    ind_v = ind[:, 0] + trans_v
+    ind_h = ind[:, 1] + trans_h
+    # to avoid overflow of the mask dimensions
+    ind_v[ind_v >= m_t.shape[0]] = m_t.shape[0] - 1
+    ind_h[ind_h >= m_t.shape[1]] = m_t.shape[1] - 1
+
+    m_shift_t = torch.zeros_like(m_t)
+    m_shift_t[ind_v, ind_h] = 1
+
     Z_r[m_t == 1] = Z_r[m_shift_t == 1]
     Z_g[m_t == 1] = Z_g[m_shift_t == 1]
     Z_b[m_t == 1] = Z_b[m_shift_t == 1]
-
-    # Z_r[m_t == 1] = 0
-    # Z_g[m_t == 1] = 0
-    # Z_b[m_t == 1] = 0
 
     Z = torch.cat((Z_r[None, :, :], Z_g[None, :, :], Z_b[None, :, :]), dim=0)[None,:,:,:]
     return Z
 
 def SinGAN_generate(Gs,Zs,reals,NoiseAmp,
                     opt,in_s=None,scale_v=1,scale_h=1,n=0,
-                    gen_start_scale=0,num_samples=50, Ns=None, mask_pyramid=None, shifted_mask_pyramid=None):
+                    gen_start_scale=0,num_samples=50, Ns=None, mask_pyramid=None):
     # TODO: BUG. trained relatively large image with max_size=1024, min_size=32 (on chinese_woman.jpg),
     #  and got 12 scales for reals and only 10 scales for Gs,Zs,NoiseAmp
     print(f'[debug] - |reals|={len(reals)} , |Gs|={len(Gs)}')
@@ -115,14 +128,11 @@ def SinGAN_generate(Gs,Zs,reals,NoiseAmp,
                                                                                       "you must provide Ns - " \
                                                                                       "a nested dictionary to save " \
                                                                                       "the intermediate noises."
-    if opt.save_noise_pyramid:
-        assert isinstance(Ns, dict)
+    if opt.save_noise_pyramid:          assert isinstance(Ns, dict)
     # TODO: review. init Generated to None.
     #  later on would be populated by generated images. (manorz, 12/18/19)
-    if opt.mode == 'object_completion':
-        Generated = None
-    if in_s is None:
-        in_s = torch.full(reals[0].shape, 0, device=opt.device)
+    if opt.mode == 'object_completion': Generated = None
+    if in_s is None:                    in_s = torch.full(reals[0].shape, 0, device=opt.device)
 
     images_cur = []
 
@@ -159,16 +169,17 @@ def SinGAN_generate(Gs,Zs,reals,NoiseAmp,
 
             if n < gen_start_scale:
                 z_curr = Z_opt
-                # TODO: Ask Tamar: why Zs is all zeros except the first scale? (manorz, 12/18/19)
-                # functions.plot_minibatch(z_curr,f'DEBUG (REMOVE LATER)\n'
-                #                                 f'z_crr\n'
-                #                                 f'(scale={n}, image={i})', opt) #TODO: remove later (manorz, 12/18/19)
+                if opt.mode == 'object_completion':
+                    # TODO: Ask Tamar: why Zs is all zeros except the first scale? (manorz, 12/19/19)
+                    # TODO: remove later (manorz, 12/19/19)
+                    # functions.plot_minibatch(torch.cat((z_curr,
+                    #                                     torch.cat((m(mask_pyramid[0][n]),
+                    #                                                m(mask_pyramid[0][n]),
+                    #                                                m(mask_pyramid[0][n])), dim=1)), dim=0),
+                    #                          f'DEBUG\nSample No {i}, Mask No 0\n|mask|={m(mask_pyramid[0][n]).shape} '
+                    #                          f'|z_curr|={z_curr.shape}', opt)
+                    z_curr = manipulate_single_scale(z_curr, m(mask_pyramid[0][n]), opt)
 
-            if opt.pyramid and n == 0:
-                z_curr = manipulate_single_scale(z_curr, mask_pyramid[i][n], shifted_mask_pyramid[i][n])
-                # functions.plot_minibatch(z_curr,f'DEBUG (REMOVE LATER)\n'
-                #                                 f'z_crr after mask\n'
-                #                                 f'(scale={n}, image={i})',opt) # TODO: remove later (manorz, 12/18/19)
 
             z_in = noise_amp*(z_curr)+I_prev
             I_curr = G(z_in.detach(),I_prev)
@@ -178,7 +189,9 @@ def SinGAN_generate(Gs,Zs,reals,NoiseAmp,
             if opt.save_noise_pyramid:
                 Ns[i].append(z_curr)
 
-            if n == len(reals)-1:
+            # TODO: review. BUG |reals| != |Gs| fix. (manorz, 12/19/19)
+            # if n == len(reals)-1:
+            if n == len(reals)-(len(reals)-len(Gs)+1):
                 if opt.mode == 'train':
                     dir2save = '%s/RandomSamples/%s/gen_start_scale=%d' % (opt.out, opt.input_name[:-4], gen_start_scale)
                 else:
@@ -187,18 +200,15 @@ def SinGAN_generate(Gs,Zs,reals,NoiseAmp,
                     os.makedirs(dir2save)
                 except OSError:
                     pass
+
                 if (opt.mode != "harmonization") & (opt.mode != "editing") & \
                         (opt.mode != "SR") & (opt.mode != "paint2image") & (opt.mode != 'object_completion'):
                     plt.imsave('%s/%d.png' % (dir2save, i), functions.convert_image_np(I_curr.detach()), vmin=0,vmax=1)
                     #plt.imsave('%s/%d_%d.png' % (dir2save,i,n),functions.convert_image_np(I_curr.detach()), vmin=0, vmax=1)
                     #plt.imsave('%s/in_s.png' % (dir2save), functions.convert_image_np(in_s), vmin=0,vmax=1)
-                if opt.mode == 'object_completion':
-                    if not opt.pyramid:
-                        plt.imsave('%s/%d.png' % (dir2save, i), functions.convert_image_np(I_curr.detach()), vmin=0,
-                                   vmax=1)
-                    else:
-                        plt.imsave('%s/%d.modify.png' % (dir2save, i), functions.convert_image_np(I_curr.detach()), vmin=0,
-                                   vmax=1)
+                elif opt.mode == 'object_completion':
+                    plt.imsave('%s/regenerated%s.png' % (dir2save, i),functions.convert_image_np(I_curr.detach()), vmin=0,vmax=1)
+
                 # TODO: review create a mini-batch of generated images. (manorz, 12/18/19)
                 if   (opt.mode == 'object_completion') and not isinstance(Generated, torch.Tensor):
                     Generated = I_curr.detach()
@@ -206,6 +216,13 @@ def SinGAN_generate(Gs,Zs,reals,NoiseAmp,
                     Generated = torch.cat((Generated,I_curr), dim=0)
             images_cur.append(I_curr)
         n+=1
+
+        if opt.plotting:
+            i_curr = images_cur[0]
+            for i in range(1,len(images_cur)):
+                i_curr = torch.cat((i_curr,images_cur[i]), dim=0)
+            i_curr = torch.cat((m(i_curr),z_curr),dim=0)
+            functions.plot_minibatch(i_curr, f'Generated Images Scale {n} Shape {i_curr.shape}',opt)
 
     if opt.save_noise_pyramid:
         dir2save = functions.generate_dir2save(opt)

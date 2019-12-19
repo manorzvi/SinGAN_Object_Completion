@@ -31,29 +31,9 @@ def handle_new_output_dir(opt):
     except OSError:
         pass
 
-def manipulate_noise(Z_pyramid: list, mask_pyramid: dict, m_shift_pyramid: dict):
-    assert (len(Z_pyramid) == len(mask_pyramid)) and \
-           (len(Z_pyramid) == len(m_shift_pyramid)), "Mask pyramids must have the same No of scales as the" \
-                                                     "noise pyramid."
-    for z, m, m_shifted in zip(Z_pyramid, mask_pyramid, m_shift_pyramid):
-        assert ((z.shape[2] == m.shape[2]) and (z.shape[3] == m.shape[3])) and \
-               ((z.shape[2] == m_shifted.shape[2]) and (z.shape[3] == m_shifted.shape[3])), \
-            'All masks must have the same size as the noise.'
+def random_samples(opt, mask_pyramid=None):
 
-    for i in range(len(Z_pyramid)):
-        Z_pyramid[i] = manipulate_single_scale(Z_pyramid[i], mask_pyramid[i], m_shift_pyramid[i])
-
-    return Z_pyramid
-
-def random_samples(opt, mask_pyramid=None, shifted_mask_pyramid=None):
-    assert (not mask_pyramid and not shifted_mask_pyramid) or \
-           (isinstance(mask_pyramid,dict) and isinstance(shifted_mask_pyramid,dict)), "If applied, both pyramids should" \
-                                                                                      " be valid."
-    if shifted_mask_pyramid and shifted_mask_pyramid:
-        assert len(mask_pyramid) == len(shifted_mask_pyramid), "If applied, both pyramids should have the same length."
-        for (i1,m1), (i2,m2) in zip(mask_pyramid.items(),shifted_mask_pyramid.items()):
-            for m11, m21 in zip(m1,m2):
-                assert m11.shape == m21.shape, "If applied mask pyramids, all masks should have the same sizes."
+    assert isinstance(mask_pyramid,dict) or not mask_pyramid, "If applied, a pyramid should be valid."
 
     Gs       = []
     Zs       = []
@@ -63,9 +43,6 @@ def random_samples(opt, mask_pyramid=None, shifted_mask_pyramid=None):
     if opt.save_noise_pyramid:
         Ns = {n: [] for n in range(opt.num_samples)}
 
-    if not opt.pyramid:
-        handle_new_output_dir(opt)
-
     if opt.mode == 'random_samples':
         real = functions.read_image(opt)
         functions.adjust_scales2image(real, opt)
@@ -74,8 +51,9 @@ def random_samples(opt, mask_pyramid=None, shifted_mask_pyramid=None):
         # TODO: manually set n due to the bug in which |reals| != |Gs|. (manorz, 12/19/19)
         SinGAN_generate(Gs, Zs, reals, NoiseAmp, opt,
                         gen_start_scale=opt.gen_start_scale, num_samples=opt.num_samples,
-                        Ns=(Ns if opt.save_noise_pyramid else None),
-                        n=(len(reals)-len(Gs)))
+                        Ns=(Ns if opt.save_noise_pyramid else None)
+                        # n=(len(reals)-len(Gs))
+        )
 
     elif opt.mode == 'random_samples_arbitrary_sizes':
         real = functions.read_image(opt)
@@ -88,8 +66,6 @@ def random_samples(opt, mask_pyramid=None, shifted_mask_pyramid=None):
 
     elif opt.mode == 'object_completion':
         real = functions.read_image(opt)
-        if opt.plotting and not opt.pyramid:
-            functions.plot_minibatch(real, f'Original Real, shape={real.shape}', opt)
         functions.adjust_scales2image(real, opt)
         Gs, Zs, reals, NoiseAmp = functions.load_trained_pyramid(opt)
         in_s = functions.generate_in2coarsest(reals, 1, 1, opt)
@@ -97,9 +73,9 @@ def random_samples(opt, mask_pyramid=None, shifted_mask_pyramid=None):
         return SinGAN_generate(Gs, Zs, reals, NoiseAmp, opt,
                                gen_start_scale=opt.gen_start_scale, num_samples=opt.num_samples,
                                Ns=(Ns if opt.save_noise_pyramid else None),
-                               mask_pyramid=(mask_pyramid if opt.pyramid else None),
-                               shifted_mask_pyramid=(shifted_mask_pyramid if opt.pyramid else None),
-                               n=(len(reals)-len(Gs)))
+                               mask_pyramid=mask_pyramid,
+                               # n=(len(reals)-len(Gs))
+        )
 
 if __name__ == '__main__':
     parser = get_arguments()
@@ -114,7 +90,9 @@ if __name__ == '__main__':
 
     opt = parser.parse_args()
     opt = functions.post_config(opt)
-    opt.pyramid = False
+
+    handle_new_output_dir(opt)
+
     random_samples(opt)
 
 
