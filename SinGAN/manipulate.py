@@ -109,7 +109,7 @@ def SinGAN_generate(Gs,Zs,reals,NoiseAmp,
                     gen_start_scale=0,num_samples=50, Ns=None, mask_pyramid=None, shifted_mask_pyramid=None):
     # TODO: BUG. trained relatively large image with max_size=1024, min_size=32 (on chinese_woman.jpg),
     #  and got 12 scales for reals and only 10 scales for Gs,Zs,NoiseAmp
-    # print(f'|reals|={len(reals)} , |Gs|={len(Gs)}')
+    print(f'[debug] - |reals|={len(reals)} , |Gs|={len(Gs)}')
     assert (opt.save_noise_pyramid and Ns is not None) or not opt.save_noise_pyramid, "if save_noise_pyramid " \
                                                                                       "option is active, " \
                                                                                       "you must provide Ns - " \
@@ -160,15 +160,15 @@ def SinGAN_generate(Gs,Zs,reals,NoiseAmp,
             if n < gen_start_scale:
                 z_curr = Z_opt
                 # TODO: Ask Tamar: why Zs is all zeros except the first scale? (manorz, 12/18/19)
-                functions.plot_minibatch(z_curr,f'DEBUG (REMOVE LATER)\n'
-                                                f'z_crr\n'
-                                                f'(scale={n}, image={i})', opt) #TODO: remove later (manorz, 12/18/19)
+                # functions.plot_minibatch(z_curr,f'DEBUG (REMOVE LATER)\n'
+                #                                 f'z_crr\n'
+                #                                 f'(scale={n}, image={i})', opt) #TODO: remove later (manorz, 12/18/19)
 
             if opt.pyramid and n == 0:
                 z_curr = manipulate_single_scale(z_curr, mask_pyramid[i][n], shifted_mask_pyramid[i][n])
-                functions.plot_minibatch(z_curr,f'DEBUG (REMOVE LATER)\n'
-                                                f'z_crr after mask\n'
-                                                f'(scale={n}, image={i})',opt) # TODO: remove later (manorz, 12/18/19)
+                # functions.plot_minibatch(z_curr,f'DEBUG (REMOVE LATER)\n'
+                #                                 f'z_crr after mask\n'
+                #                                 f'(scale={n}, image={i})',opt) # TODO: remove later (manorz, 12/18/19)
 
             z_in = noise_amp*(z_curr)+I_prev
             I_curr = G(z_in.detach(),I_prev)
